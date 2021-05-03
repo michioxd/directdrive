@@ -1,6 +1,6 @@
 <?php
-if (isset($_POST['id'])) {
-    $id = $_POST['id'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
     $__url = filter_var(strip_tags($id), FILTER_SANITIZE_STRING);
     $_url = str_replace("https://drive.google.com/file/d/", "", $__url);
     $iurl = str_replace("/view?usp=sharing", "", $_url);
